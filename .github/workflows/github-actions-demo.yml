@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 name: Node.js CI
+=======
+name: Actions Tests
+>>>>>>> b10a5d7e911becebb38c0a2c83ffe5fa78f474c0
 
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+<<<<<<< HEAD
 
 jobs:
   build:
@@ -16,6 +21,16 @@ jobs:
         node-version: [21.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
+=======
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+>>>>>>> b10a5d7e911becebb38c0a2c83ffe5fa78f474c0
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
