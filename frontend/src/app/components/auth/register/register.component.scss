@@ -1,0 +1,12 @@
+.register__grid{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register{
+    width: 480px;
+    height: 360px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 35px 10px rgba(34, 60, 80, 0.15);
+}
