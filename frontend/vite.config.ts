@@ -19,5 +19,11 @@ export default defineConfig({
         secure: false,
       }
     }
+  },
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@app": fileURLToPath(new URL("./src/app"))
+    }
   }
 })

@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-input',
+  selector: 'ModInput',
   standalone: true,
   imports: [],
   templateUrl: './input.component.html',
   styleUrl: './input.component.scss'
 })
 export class InputComponent {
-
+  @Input({ required: true }) placeholder = "";
+  @Input() image = "";
 }
