@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class CardlistComponent {
 
+  recupes: string = "Выбранные рецепты"
   constructor() {
 
   }
